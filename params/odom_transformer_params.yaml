@@ -13,3 +13,9 @@ odom_transformer:
       topic_in: /camera_2/visual_slam/tracking/odometry
       source_frame: camera_2_infra1_frame
       topic_out: /camera_2/odom_base
+
+tranformer_covariance_node:
+  ros_parameters:
+    pose_cov_x: 0.1
+    pose_cov_y: 0.1
+    pose_cov_yaw: 0.2

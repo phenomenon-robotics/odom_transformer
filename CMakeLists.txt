@@ -32,6 +32,11 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+install(PROGRAMS
+  odom_transformer/transform_covariance.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 
 if(BUILD_TESTING)
     # Automatically add all unit tests (Python files starting with "test_") in the test directory.
